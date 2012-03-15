@@ -1,0 +1,412 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Revelation</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<!--imports the main css file-->
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+<!--imports prettyPhoto css file-->
+<link rel="stylesheet" type="text/css" href="css/prettyPhoto.css" media="screen" />
+
+<!--imports jquery-->
+<script type="text/javascript" src="js/jquery-1.5.2.js"></script>
+<!--imports jquery form plugin-->
+<script type="text/javascript" src="js/jquery.form.js"></script>
+<!--imports twitter feed plugin-->
+<script type="text/javascript" src="js/jquery.tweet.js"></script>
+<!--imports easing plugin-->
+<script type="text/javascript" src="js/easing.js"></script>
+<!--imports cycle slider plugin-->
+<script type="text/javascript" src="js/jquery.cycle.all.js"></script>
+<!--imports prettyPhoto plugin-->
+<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+<!--imports jQuery Tools plugin-->
+<script type="text/javascript" src="js/jquery.tools.min.js"></script>
+
+<!--imports custom javascript code-->
+<script type="text/javascript" src="js/custom.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function(){	
+		$('#images-slider').cycle({ 
+			fx:      'growY', // transition type
+			speed:    600, 
+			timeout:  5000,
+			cleartype: false,   //  Fixes the issue with IE6+
+			startingSlide: 0,
+			next: '#cycle-next',
+			prev: '#cycle-prev'
+		});	
+	});			
+</script>
+
+<!--[if IE 7]><link href="css/ie7.css" rel="stylesheet" type="text/css" media="screen" /><![endif]-->
+
+</head>
+
+<body class="mosaic">
+	
+	<div id="wrapper">	
+		<div id="header">
+			
+			<div id="logo">
+				<h1><a href="index.html">Revelation</a></h1>
+				<p class="main-subtitle">a business template</p>
+			</div><!-- end logo -->
+			
+			<ul id="navigation">
+				<li><a class="active" href="index.html">Home</a>
+					<ul>
+						<li><a href="index.html">Cycle Slider - Images</a></li>
+						<li><a href="index-content-slider.html">Cycle Slider - Content</a></li>
+						<li><a href="index-alternate.html">Alternate Layout 1</a></li>
+						<li><a href="index-alternate-2.html">Alternate Layout 2</a></li>
+					</ul>
+				</li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="portfolio-1.html">Portfolio</a>
+					<ul>
+						<li><a href="portfolio-1.html">One Column</a></li>
+						<li><a href="portfolio-2.html">Two Columns</a>
+							<ul>
+								<li><a href="portfolio-1.html">One Column</a></li>
+								<li><a href="portfolio-2.html">Two Columns</a></li>
+								<li><a href="portfolio-3.html">Three Columns</a></li>
+							</ul>
+						</li>
+						<li><a href="portfolio-3.html">Three Columns</a></li>						
+					</ul>
+				</li>
+				<li><a href="#">Features</a>
+					<ul>
+					<li><a href="services.html">Services (Pricing Tables)</a></li>
+					<li><a href="elements.html">Page Elements</a></li>
+					<li><a href="grid.html">Column Layout</a></li>
+					<li><a href="404.html">404 Page</a></li>
+					<li><a href="blog-single-post.html">Blog Post</a></li>
+					<li><a href="full-width.html">Full Width Page</a></li>			
+					<li><a href="sidebar-left.html">Sidebar Left</a></li>			
+					</ul>
+				</li>
+				<li><a href="blog.html">Blog</a>
+					<ul>
+						<li><a href="blog-single-post.html">Blog Post</a></li>
+					</ul>
+				</li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+			<div class="clear"></div>
+		</div><!-- end header -->
+	
+		<div id="featured">
+			<ul id="images-slider">
+				<!-- slide 1 -->
+				<li>
+					<img src="img/slide-1.jpg" alt="image" />
+					<!-- caption text -->
+					<div class="caption">
+						<h3>When Day And Dream Unite</h3>
+						<p>Praesent nec aliquet elit. Nullam convallis placerat metus, sit amet ultrices nulla faucibus sit amet. Quisque dictum lorem sed sem pharetra luctus.</p>
+					</div><!-- end caption -->
+				</li>
+				<!-- slide 2 -->
+				<li>
+					<img src="img/slide-2.jpg" alt="image" />
+					<!-- caption text -->
+					<div class="caption">
+						<h3>Images And Words</h3>
+						<p>Praesent nec aliquet elit. Nullam convallis placerat metus, sit amet ultrices nulla faucibus sit amet. Quisque dictum lorem sed sem pharetra luctus.</p>
+					</div><!-- end caption -->
+				</li>
+				<!-- slide 3 -->
+				<li>
+					<img src="img/slide-3.jpg" alt="image" />
+					<!-- caption text -->
+					<div class="caption">
+						<h3>Awake</h3>
+						<p>Praesent nec aliquet elit. Nullam convallis placerat metus, sit amet ultrices nulla faucibus sit amet. Quisque dictum lorem sed sem pharetra luctus.</p>
+					</div><!-- end caption -->
+				</li>		
+				<!-- slide 4 -->
+				<li>
+					<img src="img/slide-4.jpg" alt="image" />
+					<!-- caption text -->
+					<div class="caption">
+						<h3>Change of Season</h3>
+						<p>Praesent nec aliquet elit. Nullam convallis placerat metus, sit amet ultrices nulla faucibus sit amet. Quisque dictum lorem sed sem pharetra luctus.</p>
+					</div><!-- end caption -->
+				</li>					
+			</ul>
+			
+			<ul id="slider-cycle-nav">
+				<li><a id="cycle-prev"></a></li>
+				<li><a id="cycle-next"></a></li>
+			</ul>
+		</div><!-- end featured -->
+		
+		<div class="separator-line"></div>
+		
+		<div class="tagline">
+			<div class="tagline-text">
+				<h3>Welcome to <span>Revelation</span> - a Business HTML Template</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec purus tellus, quis pulvinar tortor. Sed mattis lobortis gravida. Integer convallis ipsum in neque tempus posuere.</p>
+			</div><!-- end tagline-text -->
+			
+			<div class="tagline-btn">
+				<a href="#"><span class="main">Buy Now</span><span class="arrow-btn"></span></a>
+			</div><!-- end tagline-btn -->
+			<div class="clear"></div>
+		</div><!-- end tagline -->
+		
+		<div class="separator-line"></div>
+		
+	<!-- First row of columns -->
+		
+		<div class="col-container">
+			<div class="title-col">
+				<h2>What We Do</h2>
+				<p>Lorem ipsum dolor sit amet, consec adipiscing elit. Duis nec purus.</p>
+				<a class="button" href="#">Read More</a>
+			</div><!-- end main-col -->
+			
+			<div class="one-fourth">
+				<div class="box-title">
+					<span class="box-number">1</span>
+					<h3>Take The Time</h3>
+					<span class="box-subtitle">Quisque lobortis</span>
+				</div><!-- end box-title -->	
+				<p>Lorem ipsum dolor sit amet, consecadipiscing elit. Duis nec purus tellus, quis pulvinar tortor. Sed mattis loborti gravida. Integer convallis.</p>
+			</div><!-- end one-fourth -->
+			
+			<div class="one-fourth">
+				<div class="box-title">
+					<span class="box-number">2</span>
+					<h3>Under A Glass Moon</h3>
+					<span class="box-subtitle">Quisque lobortis</span>
+				</div><!-- end box-title -->	
+				<p>Lorem ipsum dolor sit amet, consecadipiscing elit. Duis nec purus tellus, quis pulvinar tortor. Sed mattis loborti gravida. Integer convallis.</p>
+			</div><!-- end one-fourth -->
+			
+			<div class="one-fourth last">
+				<div class="box-title">
+					<span class="box-number">3</span>
+					<h3>Learning To Live</h3>
+					<span class="box-subtitle">Quisque lobortis</span>
+				</div><!-- end box-title -->	
+				<p>Lorem ipsum dolor sit amet, consecadipiscing elit. Duis nec purus tellus, quis pulvinar tortor. Sed mattis loborti gravida. Integer convallis.</p>
+			</div><!-- end one-fourth -->
+			
+			<div class="clear"></div>
+		</div><!-- col-container -->
+		
+		<div class="separator-line"></div>
+		
+	<!-- Second row of columns -->	
+		
+		<div class="col-container">
+			<div class="title-col">
+				<h2>Selected Work</h2>
+				<p>Lorem ipsum dolor sit amet, consec adipiscing elit. Duis nec purus.</p>
+				<a class="button" href="#">Read More</a>
+			</div><!-- end main-col -->
+			
+			<div class="one-fourth">
+				<a class="zoom" href="img/slide-1.jpg" rel="prettyPhoto"><img class="box-img" src="img/box-img-1.jpg" alt="description" /></a>
+				<div class="box-title">
+					<h4>Temptation</h4>
+				</div><!-- end box-title -->	
+				<p>Lorem ipsum dolor sit amet, consecadipiscing elit.</p>
+			</div><!-- end one-fourth -->
+			
+			<div class="one-fourth">
+				<a class="play" href="http://vimeo.com/7449107" rel="prettyPhoto"><img class="box-img" src="img/box-img-2.jpg" alt="description" /></a>
+				<div class="box-title">
+					<h4>4Hire</h4>
+				</div><!-- end box-title -->	
+				<p>Lorem ipsum dolor sit amet, consecadipiscing elit.</p>
+			</div><!-- end one-fourth -->
+			
+			<div class="one-fourth last">
+				<a class="zoom" href="img/slide-1.jpg" rel="prettyPhoto"><img class="box-img" src="img/box-img-3.jpg" alt="description" /></a>
+				<div class="box-title">
+					<h4>Personalize</h4>			
+				</div><!-- end box-title -->	
+				<p>Lorem ipsum dolor sit amet, consecadipiscing elit.</p>
+			</div><!-- end one-fourth -->
+			
+			<div class="clear"></div>
+		</div><!-- col-container -->
+		
+		<div class="separator-line"></div>
+		
+		<div class="col-container">						
+			<div class="one-half">
+				<div class="box-title">
+					<h3>About Us</h3>
+					<span class="box-subtitle">Quisque lobortis</span>
+				</div><!-- end box-title -->	
+				<p>Fusce scelerisque pellentesque mi. Suspendisse elementum tellus ut quam pharetra vel volutpat et, euismod eu sem. Aliquam eget lacus magna quis.</p>			
+				<p>Lorem ipsum dolor sit amet, consec adipiscing elit. Duis nec purus mattis lobortis gravida. Aliquam eget lacus magna, quis posuere tellus. Fusce scelerisque pellentesque mi. Suspendisse elementum tellus ut quam pharetra vel volutpat et, euismod eu sem.</p>
+				<a class="button" href="about.html">Continue Reading</a>
+			</div><!-- end one-half -->
+			
+			<div class="one-fourth">
+				<div class="box-title">
+					<h3>Latest News</h3>
+					<span class="box-subtitle">Quisque lobortis</span>
+				</div><!-- end box-title -->
+				<ul class="latest-news">
+					<li>
+						<a href="#"><strong>Mauris vitae lorem nulla</strong></a>
+						<p>Duis nec purus tellus, quis pulvinar lobortis gravida. Integer convallis...</p>
+						<span>May 19, 2011</span>
+					</li>
+					<li>
+						<a href="#"><strong>Lorem ipsum dolor</strong></a>
+						<p>Duis nec purus tellus, quis pulvinar lobortis gravida. Integer convallis...</p>
+						<span>May 15, 2011</span>
+					</li>
+				</ul>
+			</div><!-- end one-fourth -->
+			
+			<div class="one-fourth last">
+				<div class="box-title">
+					<h3>Services We Offer</h3>
+					<span class="box-subtitle">Quisque lobortis</span>
+				</div><!-- end box-title -->
+				<p>Mauris lorem velit, mattis a venenatis eget, vestibulum in odio.</p>
+				<ul class="custom-list arrows-1">
+					<li>Web Design From Scratch</li>
+					<li>WordPress Implementation</li>
+					<li>Brand Development</li>
+					<li>SEO Optimization</li>
+					<li>Import/Export Services</li>
+					<li>Marketing and Business Plans</li>					
+				</ul>
+			</div><!-- end one-fourth -->
+			
+			<div class="clear"></div>
+			
+		</div><!-- end col-container -->
+		
+	</div><!-- end wrapper -->
+	
+	<div id="footer">
+		<div id="footer-content">
+		
+			<div class="one-fourth">
+				<div id="footer-logo">
+					<h3><a href="index.html">Revelation</a></h3>
+					<p class="main-subtitle">a business template</p>
+				</div><!-- end logo -->
+				<p>Fusce scelerisque pellentesque mi. Suspendisse elementum tellus ut quam pharetra vel volutpat et, euismod eu sem. Aliquam eget lacus magna quis.</p>
+			
+				<h4>Follow Us</h4>
+				<ul class="social-links">
+					<li class="facebook" title="Facebook"><a href="#"></a></li>
+					<li class="twitter" title="Twitter"><a href="#"></a></li>
+					<li class="linkedin" title="Linked In"><a href="#"></a></li>										
+					<li class="rss" title="RSS Feed"><a href="#"></a></li>
+					<li class="yahoo" title="Yahoo!"><a href="#"></a></li>
+					<li class="flickr" title="Flickr"><a href="#"></a></li>							
+				</ul><!-- end social-links -->
+			</div><!-- end one-fourth -->
+			
+			<div class="one-fourth">
+				<h4>Latest Tweets</h4>
+				<div class="twitter-feed">
+				</div><!-- end twitter-feed -->
+			</div><!-- end one-fourth -->			
+			
+			<div class="one-fourth">
+				<h4>Latest Blog Posts</h4>
+				<ul class="latest-blog-posts">
+					<li><a href="#">Fusce Scelerisque</a></li>
+					<li><a href="#">Suspendisse Elementum</a></li>
+					<li><a href="#">Mauris Lorem Velit</a></li>
+					<li><a href="#">Duis Necpurus Tellus</a></li>	
+					<li><a href="#">Suspendisse Elementum</a></li>					
+				</ul>
+			</div><!-- end one-fourth -->			
+			
+			<div class="one-fourth last">				
+				<h4>From Our Portfolio</h4>
+				<ul id="footer-portfolio">
+					<li>
+						<a href="img/slide-4.jpg" rel="prettyPhoto">
+							<img src="img/portfolio/footer/001.jpg" alt="description" />
+						</a>
+					</li>
+					<li>
+						<a href="img/slide-1.jpg" rel="prettyPhoto">
+							<img src="img/portfolio/footer/004.jpg" alt="description" />
+						</a>
+					</li>
+					<li class="last">
+						<a href="img/slide-2.jpg" rel="prettyPhoto">
+							<img src="img/portfolio/footer/002.jpg" alt="description" />
+						</a>
+					</li>
+					<li>
+						<a href="img/slide-2.jpg" rel="prettyPhoto">
+							<img src="img/portfolio/footer/002.jpg" alt="description" />
+						</a>
+					</li>
+					<li>
+						<a href="img/slide-4.jpg" rel="prettyPhoto">
+							<img src="img/portfolio/footer/001.jpg" alt="description" />
+						</a>
+					</li>
+					<li class="last">
+						<a href="img/slide-1.jpg" rel="prettyPhoto">
+							<img src="img/portfolio/footer/004.jpg" alt="description" />
+						</a>
+					</li>
+					<li>
+						<a href="img/slide-1.jpg" rel="prettyPhoto">
+							<img src="img/portfolio/footer/004.jpg" alt="description" />
+						</a>
+					</li>
+					<li>
+						<a href="img/slide-2.jpg" rel="prettyPhoto">
+							<img src="img/portfolio/footer/002.jpg" alt="description" />
+						</a>
+					</li>
+					<li class="last">
+						<a href="img/slide-4.jpg" rel="prettyPhoto">
+							<img src="img/portfolio/footer/001.jpg" alt="description" />
+						</a>
+					</li>
+				</ul>
+			</div><!-- end one-fourth -->			
+			
+			<div class="clear"></div>
+			
+		</div><!-- end footer-content -->
+	</div><!-- end footer -->
+	
+	<div id="footer-bottom">
+		<div id="footer-bottom-content">
+			<div id="copyright">
+				<a href="index.html">www.revelation.com</a>
+				<p>Copyright &copy; 2011 Revelation. All rights reserved</p>
+			</div><!-- end copyright -->	
+			
+			<ul id="footer-nav">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="portfolio-1.html">Portfolio</a></li>
+				<li><a href="services.html">Services</a></li>
+				<li><a class="active" href="blog.html">Blog</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>			
+			
+			<div class="clear"></div>
+		</div><!-- end footer-bottom-content -->
+	</div><!-- end footer-bottom -->
+	
+</body>
+
+</html>
