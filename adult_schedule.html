@@ -6,7 +6,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
 <!--imports the main css file-->
-<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
 <!--imports prettyPhoto css file-->
 <link rel="stylesheet" type="text/css" href="css/prettyPhoto.css" media="screen" />
 
@@ -28,35 +28,13 @@
 <!--imports custom javascript code-->
 <script type="text/javascript" src="js/custom.js"></script>
 
-<script type="text/javascript">
-	$(document).ready(function(){	
-		$('#images-slider').cycle({ 
-			fx:      'fade', // transition type
-			speed:    600, 
-			timeout:  5000,
-			cleartype: false,   //  Fixes the issue with IE6+
-			startingSlide: 0,
-			next: '#cycle-next',
-			prev: '#cycle-prev'
-		});	
-	});			
-</script>
-
 <!--[if IE 7]><link href="css/ie7.css" rel="stylesheet" type="text/css" media="screen" /><![endif]-->
 
 </head>
 
 <body class="mosaic">
-	
-	<div id="wrapper">	
+	<div id="wrapper">		
 		<div id="header">
-			<div id="search-form" style="float:right">
-				<form method="post" action="">
-					<input type="text" id="search-box"></input>
-					<input type="submit" value="submit" id="search-button"></input>
-					<div class="clear"></div>
-				</form>
-			</div>
 			<div id="logo">
 				<h1><a href="index.html">CityDance</a></h1>
 				<p class="main-subtitle">dance conservatory</p>
@@ -125,197 +103,116 @@
 			</ul>
 			<div class="clear"></div>
 		</div><!-- end header -->
+		
+		<div id="page-title">
+			<div id="page-title-content">
+				<h2>Adult Schedule</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec purus tellus, quis pulvinar tortor. Sed mattis lobortis gravida. Integer convallis ipsum in neque tempus posuere. </p>
+			</div><!-- end page-title-content -->
+		</div><!-- end page-title -->
 	
-		<div id="featured">
-			<ul id="images-slider">
-				<!-- slide 1 -->
-				<li>
-					<img src="img/dance1.png" alt="image" />
-					<!-- caption text -->
-					<div class="caption">
-						<h3>When Day And Dream Unite</h3>
-						<p>Praesent nec aliquet elit. Nullam convallis placerat metus, sit amet ultrices nulla faucibus sit amet. Quisque dictum lorem sed sem pharetra luctus.</p>
-					</div><!-- end caption -->
-				</li>
-				<!-- slide 2 -->
-				<li>
-					<img src="img/dance2.png" alt="image" />
-					<!-- caption text -->
-					<div class="caption">
-						<h3>Images And Words</h3>
-						<p>Praesent nec aliquet elit. Nullam convallis placerat metus, sit amet ultrices nulla faucibus sit amet. Quisque dictum lorem sed sem pharetra luctus.</p>
-					</div><!-- end caption -->
-				</li>
-				<!-- slide 3 -->
-				<li>
-					<img src="img/dance3.png" alt="image" />
-					<!-- caption text -->
-					<div class="caption">
-						<h3>Awake</h3>
-						<p>Praesent nec aliquet elit. Nullam convallis placerat metus, sit amet ultrices nulla faucibus sit amet. Quisque dictum lorem sed sem pharetra luctus.</p>
-					</div><!-- end caption -->
-				</li>		
-				<!-- slide 4 -->
-				<li>
-					<img src="img/dance4.png" alt="image" />
-					<!-- caption text -->
-					<div class="caption">
-						<h3>Change of Season</h3>
-						<p>Praesent nec aliquet elit. Nullam convallis placerat metus, sit amet ultrices nulla faucibus sit amet. Quisque dictum lorem sed sem pharetra luctus.</p>
-					</div><!-- end caption -->
-				</li>					
+		<div><a href="find_an_event.html">Calendar/Events</a> -> Adult Schedule</div>
+		<br />
+	<!-- Main Content -->
+		<div id="main-content" class="mc-left">
+			<h2>Adult Schedule</h2>
+			<p>Nulla id massa ac eros dignissim volutpat ac vel tortor. Praesent vel magna turpis, sed vehicula libero. Nullam viverra 
+			ante vitae risus lobortis in sollicitudin odio imperdiet. Duis turpis nulla, porta quis luctus ut, imperdiet et urna. 
+			Pellentesque dapibus orci vitae metus luctus fringilla.</p>
+			<p>Maecenas ullamcorper, odio vel tempus egestas, dui orci faucibus orci, sit amet aliquet lectus dolor et quam. 
+			Pellentesque consequat luctus purus. Nunc et risus. Etiam a nibh. Phasellus dignissim metus eget nisi. Vestibulum 
+			sapien dolor, aliquet nec, porta ac, malesuada a, libero. Praesent feugiat purus eget est. Nulla facilisi.</p>
+			<p>Nulla id massa ac eros dignissim volutpat ac vel tortor. Praesent vel magna turpis, sed vehicula libero. Nullam viverra 
+			ante vitae risus lobortis in sollicitudin odio imperdiet. Duis turpis nulla, porta quis luctus ut, imperdiet et urna. 
+			Pellentesque dapibus orci vitae metus luctus fringilla.</p>
+			
+			<div class="separator-line"></div>
+			
+			<h2>Mission And Goals</h2>
+			<img class="left" src="img/team.jpg" alt="Image description" />
+			<p>Nulla id massa ac eros dignissim volutpat ac vel tortor. Praesent vel magna turpis, sed vehicula libero. Nullam viverra 
+			ante vitae risus lobortis in sollicitudin odio imperdiet. Duis turpis nulla, porta quis luctus ut, imperdiet et urna. 
+			Pellentesque dapibus orci vitae metus luctus fringilla.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin gravida luctus dui eu placerat. Aliquam vitae tincidunt lorem. Nam ligula neque, laoreet ut rhoncus et, varius at mi. Morbi sit amet rutrum velit. Phasellus blandit tincidunt quam vitae rhoncus. Morbi velit mi, ornare nec tempor non, ultricies eget ante.</p>
+			
+			<div class="separator-line"></div>
+			
+			<h2>Word From The Founder</h2>
+			<p>Fusce scelerisque pellentesque mi. Suspendisse elementum tellus ut quam pharetra vel volutpat et, euismod eu sem. Aliquam eget lacus magna quis. Nulla id massa ac eros dignissim volutpat ac vel tortor. Praesent vel magna turpis, sed vehicula libero.</p>
+			<blockquote>
+				<p>Lorem ipsum dolor sit amet, consec adipiscing elit. Duis nec purus mattis lobortis gravida. Aliquam eget lacus magna, quis posuere tellus.</p>
+				<div class="author">John Doe, Personalize, inc</div>
+			</blockquote>
+			<p>Fusce scelerisque pellentesque mi. Suspendisse elementum tellus ut quam pharetra vel volutpat et, euismod eu sem. Nulla id massa ac eros dignissim volutpat ac vel tortor. Praesent vel magna turpis, sed vehicula libero.</p>
+		
+		</div><!-- end main-content -->		
+		
+	<!-- Sidebar Content -->	
+		<div id="sidebar" class="sb-right">		
+		
+			<h3>Search</h3>
+			<div id="search-form">
+				<form method="post" action="">
+					<input type="text" id="search-box"></input>
+					<input type="submit" value="submit" id="search-button"></input>
+					<div class="clear"></div>
+				</form>
+			</div>
+		
+			<h3>Related</h3>
+			<ul class="sidebar-menu arrows-1">
+				<li><a href="find_an_event.html">Find an Event</a></li>
+				<li><a href="youth_schedule.html">Youth Schedule</a></li>
+				<li><a href="adult_schedule.html">Adult Schedule</a></li>
+				<li><a href="tickets.html">Tickets</a></li>
+				<li><a href="calendar.html">Calendar</a></li>				
 			</ul>
 			
-			<ul id="slider-cycle-nav">
-				<li><a id="cycle-prev"></a></li>
-				<li><a id="cycle-next"></a></li>
-			</ul>
-		</div><!-- end featured -->
-		
-		<div class="separator-line"></div>
-		
-		<div class="tagline">
-			<div class="tagline-text">
-				<h3>Welcome to <span>CityDance</span></h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec purus tellus, quis pulvinar tortor. Sed mattis lobortis gravida. Integer convallis ipsum in neque tempus posuere.</p>
-			</div><!-- end tagline-text -->
+			<div class="separator-line"></div>
 			
-			<div class="tagline-btn">
-				<a href="#"><span class="main">Contribute</span><span class="arrow-btn"></span></a>
-			</div><!-- end tagline-btn -->
-			<div class="clear"></div>
-		</div><!-- end tagline -->
-		
-		<div class="separator-line"></div>
-		
-	<!-- First row of columns -->
-		
-		<div class="col-container">
-			<div class="title-col">
-				<h2>What We Do</h2>
-				<p>Lorem ipsum dolor sit amet, consec adipiscing elit. Duis nec purus.</p>
-				<a class="button" href="#">Read More</a>
-			</div><!-- end main-col -->
+			<div class="tabs">
+				<h3>Tabbed Content</h3>
 			
-			<div class="one-fourth">
-				<div class="box-title">
-					<span class="box-number">1</span>
-					<h3>Take The Time</h3>
-					<span class="box-subtitle">Quisque lobortis</span>
-				</div><!-- end box-title -->	
-				<p>Lorem ipsum dolor sit amet, consecadipiscing elit. Duis nec purus tellus, quis pulvinar tortor. Sed mattis loborti gravida. Integer convallis.</p>
-			</div><!-- end one-fourth -->
-			
-			<div class="one-fourth">
-				<div class="box-title">
-					<span class="box-number">2</span>
-					<h3>Under A Glass Moon</h3>
-					<span class="box-subtitle">Quisque lobortis</span>
-				</div><!-- end box-title -->	
-				<p>Lorem ipsum dolor sit amet, consecadipiscing elit. Duis nec purus tellus, quis pulvinar tortor. Sed mattis loborti gravida. Integer convallis.</p>
-			</div><!-- end one-fourth -->
-			
-			<div class="one-fourth last">
-				<div class="box-title">
-					<span class="box-number">3</span>
-					<h3>Learning To Live</h3>
-					<span class="box-subtitle">Quisque lobortis</span>
-				</div><!-- end box-title -->	
-				<p>Lorem ipsum dolor sit amet, consecadipiscing elit. Duis nec purus tellus, quis pulvinar tortor. Sed mattis loborti gravida. Integer convallis.</p>
-			</div><!-- end one-fourth -->
-			
-			<div class="clear"></div>
-		</div><!-- col-container -->
-		
-		<div class="separator-line"></div>
-		
-	<!-- Second row of columns -->	
-		
-		<div class="col-container">
-			<div class="title-col">
-				<h2>Selected Work</h2>
-				<p>Lorem ipsum dolor sit amet, consec adipiscing elit. Duis nec purus.</p>
-				<a class="button" href="#">Read More</a>
-			</div><!-- end main-col -->
-			
-			<div class="one-fourth">
-				<a class="zoom" href="img/slide-1.jpg" rel="prettyPhoto"><img class="box-img" src="img/box-img-1.jpg" alt="description" /></a>
-				<div class="box-title">
-					<h4>Temptation</h4>
-				</div><!-- end box-title -->	
-				<p>Lorem ipsum dolor sit amet, consecadipiscing elit.</p>
-			</div><!-- end one-fourth -->
-			
-			<div class="one-fourth">
-				<a class="play" href="http://vimeo.com/7449107" rel="prettyPhoto"><img class="box-img" src="img/box-img-2.jpg" alt="description" /></a>
-				<div class="box-title">
-					<h4>4Hire</h4>
-				</div><!-- end box-title -->	
-				<p>Lorem ipsum dolor sit amet, consecadipiscing elit.</p>
-			</div><!-- end one-fourth -->
-			
-			<div class="one-fourth last">
-				<a class="zoom" href="img/slide-1.jpg" rel="prettyPhoto"><img class="box-img" src="img/box-img-3.jpg" alt="description" /></a>
-				<div class="box-title">
-					<h4>Personalize</h4>			
-				</div><!-- end box-title -->	
-				<p>Lorem ipsum dolor sit amet, consecadipiscing elit.</p>
-			</div><!-- end one-fourth -->
-			
-			<div class="clear"></div>
-		</div><!-- col-container -->
-		
-		<div class="separator-line"></div>
-		
-		<div class="col-container">						
-			<div class="one-half">
-				<div class="box-title">
-					<h3>About Us</h3>
-					<span class="box-subtitle">Quisque lobortis</span>
-				</div><!-- end box-title -->	
-				<p>Fusce scelerisque pellentesque mi. Suspendisse elementum tellus ut quam pharetra vel volutpat et, euismod eu sem. Aliquam eget lacus magna quis.</p>			
-				<p>Lorem ipsum dolor sit amet, consec adipiscing elit. Duis nec purus mattis lobortis gravida. Aliquam eget lacus magna, quis posuere tellus. Fusce scelerisque pellentesque mi. Suspendisse elementum tellus ut quam pharetra vel volutpat et, euismod eu sem.</p>
-				<a class="button" href="about.html">Continue Reading</a>
-			</div><!-- end one-half -->
-			
-			<div class="one-fourth">
-				<div class="box-title">
-					<h3>Latest News</h3>
-					<span class="box-subtitle">Quisque lobortis</span>
-				</div><!-- end box-title -->
-				<ul class="latest-news">
-					<li>
-						<a href="#"><strong>Mauris vitae lorem nulla</strong></a>
-						<p>Duis nec purus tellus, quis pulvinar lobortis gravida. Integer convallis...</p>
-						<span>May 19, 2011</span>
-					</li>
-					<li>
-						<a href="#"><strong>Lorem ipsum dolor</strong></a>
-						<p>Duis nec purus tellus, quis pulvinar lobortis gravida. Integer convallis...</p>
-						<span>May 15, 2011</span>
-					</li>
+				<ul class="tab-nav">
+					<li><a href="#">Tab 1</a></li>					
+					<li><a href="#">Tab 2</a></li>					
+					<li><a href="#">Tab 3</a></li>													
 				</ul>
-			</div><!-- end one-fourth -->
+				<div class="tab-panels">
+					<div>
+						<p>Lorem ipsum dolor sit amet, consec adipiscing elit. Duis nec purus mattis lobortis gravida. Aliquam eget lacus magna, quis posuere tellus.</p>
+					</div>
+					<div>
+						<p>Duis nec purus mattis lobortis gravida. Aliquam eget lacus magna, quis posuere tellus. Fusce scelerisque pellentesque mi. Suspendisse elementum tellus ut quam pharetra vel volutpat et, euismod eu sem.</p>
+					</div>
+					<div>
+						<p>Aliquam eget lacus magna, quis posuere tellus. Duis nec purus mattis lobortis gravida. Lorem ipsum dolor sit amet. Fusce scelerisque pellentesque mi. Suspendisse elementum tellus ut quam pharetra vel volutpat et, euismod eu sem.</p>
+					</div>
+				</div><!-- end tab-panels -->
+			</div><!-- end tabs -->
 			
-			<div class="one-fourth last">
-				<div class="box-title">
-					<h3>Services We Offer</h3>
-					<span class="box-subtitle">Quisque lobortis</span>
-				</div><!-- end box-title -->
-				<p>Mauris lorem velit, mattis a venenatis eget, vestibulum in odio.</p>
-				<ul class="custom-list arrows-1">
-					<li>Web Design From Scratch</li>
-					<li>WordPress Implementation</li>
-					<li>Brand Development</li>
-					<li>SEO Optimization</li>
-					<li>Import/Export Services</li>
-					<li>Marketing and Business Plans</li>					
+			<div class="separator-line"></div>	
+			
+			<div class="video">
+				<h3>Sidebar Video</h3>
+				<iframe src="http://player.vimeo.com/video/7449107?title=0&amp;byline=0&amp;portrait=0" width="259" height="158" frameborder="0"></iframe>	
+			</div><!-- end sidebar-video -->
+			
+			<div class="separator-line"></div>								
+			
+			<div class="advertisment">
+			<h3>Our Sponsors</h3>
+			<p>Fusce scelerisque pellentesque mi. Suspendisse elementum telus ut quam pharetra.</p>
+				<ul class="ads">
+					<li><img src="img/ad-125x125.png" alt="Image description" /></li>
+					<li><img src="img/ad-125x125.png" alt="Image description" /></li>
+					<li><img src="img/ad-125x125.png" alt="Image description" /></li>
+					<li><img src="img/ad-125x125.png" alt="Image description" /></li>
 				</ul>
-			</div><!-- end one-fourth -->
+			</div><!-- end advertisment -->
 			
-			<div class="clear"></div>
-			
-		</div><!-- end col-container -->
+		</div><!-- end sidebar -->
+		<div class="clear"></div>		
 		
 	</div><!-- end wrapper -->
 	

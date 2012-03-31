@@ -63,7 +63,7 @@ html,body,p,div,img,h1,h2,h3,h4,h5,li,ul,ol,dl,dd,dt,form,pagele,td,tr,blockquot
 @font-face {
 	font-family: 'Yanone';
 	src: url('fonts/YanoneKaffeesatz-Regular-webfont.eot');
-	src: local('¢'), url('fonts/YanoneKaffeesatz-Regular-webfont.woff') format('woff'), url('fonts/YanoneKaffeesatz-Regular-webfont.ttf') format('truetype'), url('fonts/YanoneKaffeesatz-Regular-webfont.svg#webfontAGQ6uv7S') format('svg');
+	src: local('ï¿½'), url('fonts/YanoneKaffeesatz-Regular-webfont.woff') format('woff'), url('fonts/YanoneKaffeesatz-Regular-webfont.ttf') format('truetype'), url('fonts/YanoneKaffeesatz-Regular-webfont.svg#webfontAGQ6uv7S') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -1189,7 +1189,7 @@ ul.tweet_list li {
 	margin: 0 auto;
 	height: 132px;
 	width: 930px;
-	margin-bottom: 40px;
+	margin-bottom: 10px;
 }
 
 #page-title-content h2 {
